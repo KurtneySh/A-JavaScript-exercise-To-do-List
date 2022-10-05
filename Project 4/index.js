@@ -6,6 +6,8 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
   let list = input.value;
   let block = document.createElement("li");
+  // Updated code↓
+  block.setAttribute("class", "text");
   
   block.innerText = list;
   input.value = "";
@@ -21,13 +23,14 @@ form.addEventListener("submit", (event) => {
     }
   })
 
-  block.addEventListener("mouseover", () =>{
-    block.style.color = "red";
-  })
+  // Original codes to achieve hover effect↓
+  // block.addEventListener("mouseover", () =>{
+  //   block.style.color = "red";
+  // })
 
-  block.addEventListener("mouseleave", () =>{
-    block.style.color = "black";
-  })
+  // block.addEventListener("mouseleave", () =>{
+  //   block.style.color = "black";
+  // })
 
 })
 

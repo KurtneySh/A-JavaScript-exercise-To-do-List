@@ -37,3 +37,8 @@
     border: 1px solid black;
     overflow: scroll;
   }
+
+  /* Updated codes to achieve hover effect↓ */
+  .text:hover {
+    color: red;
+  }
